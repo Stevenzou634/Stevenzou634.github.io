@@ -41,15 +41,42 @@
 
     <div class="card">
       <div class="card-head">
+        <h3>TTC Subway Delay Prediction</h3>
+        <span class="badge">2026 – Present</span>
+      </div>
+      <div class="org">Personal Project · <a href="https://github.com/Stevenzou634/TTC-Delay-Prediction" target="_blank">GitHub</a></div>
+      <p>
+        Predicting whether a Toronto subway delay will be long (5 minutes or more) from
+        45,000+ TTC delay records published on Toronto Open Data.
+      </p>
+      <ul>
+        <li>Consolidated 1,251 inconsistent station names into 86 categories and excluded a
+          target-leaking feature (Min Gap, r = 0.83 with delay length).</li>
+        <li>Built logistic regression and random forest classifiers with a time-based split;
+          tuning the decision threshold on a validation period raised F1 from 0.38 to 0.48,
+          beating class weighting (0.44) with half the false alarms.</li>
+        <li>Found that infrastructure failures cause 55% of long delays at 5–6 am versus 14% at
+          other times, and identified a 2025–2026 shift in delay rates.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">pandas</span>
+        <span class="tag">scikit-learn</span>
+        <span class="tag">Classification</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
         <h3>Steam Games Recommender</h3>
         <span class="badge">2026</span>
       </div>
-      <div class="org">CSC111 Course Project · <a href="https://github.com/Stevenzou634/Steam-Game-Recommender-Project" target="_blank">GitHub</a></div>
+      <div class="org">CSC111 Team Project · <a href="https://github.com/Stevenzou634/Steam-Game-Recommender-Project" target="_blank">GitHub</a></div>
       <p>
-        A graph-based recommendation system that suggests Steam games based on genre, tags,
-        platforms and user review data. Game similarity is computed with Jaccard similarity,
-        with review-quality filters on positive-review ratio and review count, over a dataset
-        of 4,000+ games.
+        A graph-based recommender for 4,000+ Steam games. I implemented the backend
+        recommendation algorithm, which ranks similar games by Jaccard similarity over
+        genres, tags and platforms, and built review-quality filters (positive-review ratio
+        and review count) that screen out poorly rated games before ranking.
       </p>
       <div class="tags">
         <span class="tag">Python</span>
